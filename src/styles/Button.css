@@ -1,0 +1,51 @@
+.btn-container {
+    margin-top: 20px;
+    background-color: rgba(42, 41, 41, 0.267);
+    backdrop-filter: blur(15px);
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: 160px;
+    box-shadow: 0px 0px 4px rgb(152, 158, 240), 0px 0px 6px rgba(255, 255, 255, 0.695);
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid rgba(177, 181, 227, 0.661);
+    padding: 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 10px rgb(231, 229, 222);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.action-btn {
+    background: transparent;
+
+}
+
+@media(max-width: 950px) {
+    .btn:hover {
+        box-shadow: none;
+    }
+
+    .btn:active {
+        box-shadow: 0px 0px 10px rgb(231, 229, 222);
+        
+    }
+    .btn, .action-btn{
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+}

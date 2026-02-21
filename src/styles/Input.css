@@ -1,0 +1,47 @@
+.input-container{
+    background-color: rgba(42, 41, 41, 0.267);
+    backdrop-filter: blur(15px);
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: 180px;
+    box-shadow: 0px 0px 4px rgb(152, 158, 240), 0px 0px 6px rgba(255, 255, 255, 0.695);
+}
+.input-bar{
+    outline: none;
+    padding: 2px 4px;
+}
+.input-add-btn{
+    background-color: rgb(87,94,200);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-add-btn:hover{
+    box-shadow: 0px 0px 10px rgba(117, 124, 219, 0.901);
+}
+
+.input-add-btn:active{
+    transform: scale(0.95);
+}
+
+@media(max-width: 950px){
+    .input-add-btn:hover{
+        box-shadow: none;
+    }
+    .input-add-btn:active {
+        box-shadow: 0px 0px 10px rgb(231, 229, 222);
+        
+    }
+    .input-add-btn{
+        -webkit-tap-highlight-color: transparent;
+    }
+}
