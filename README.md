@@ -1,16 +1,146 @@
-# React + Vite
+# Smart Counter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet powerful Smart Counter application built with React and deployed on Vercel.
 
-Currently, two official plugins are available:
+Live Demo: https://smart-counter-one.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Smart Counter is a responsive web application that allows users to:
 
-## Expanding the ESLint configuration
+- Increment and decrement values
+- Add custom numbers
+- Perform arithmetic operations
+- Reset values efficiently
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The goal of this project is to practice core React fundamentals such as:
+
+- Component-based architecture
+- State management using `useState`
+- Event handling
+- Controlled inputs
+- Conditional logic
+- Clean UI structuring
+
+---
+
+## Tech Stack
+
+- React
+- JavaScript (ES6+)
+- Vite (for fast development and bundling)
+- CSS
+- Vercel (Deployment)
+
+---
+
+## Project Structure
+
+
+smart-counter/<br>
+│<br>
+├── src/<br>
+│ ├── components/<br>
+│ ├── App.jsx<br>
+│ ├── main.jsx<br>
+│ └── styles.css<br>
+│<br>
+├── index.html<br>
+├── package.json<br>
+└── vite.config.js<br>
+
+
+---
+
+## Features
+
+### 1. Dynamic Counter Control
+
+Users can:
+- Increase the counter
+- Decrease the counter
+- Add custom numeric input
+- Handle decimal calculations properly
+
+### 2. Controlled Input Field
+
+- Input is fully controlled using React state
+- Supports Enter key submission
+- Prevents invalid behavior
+
+---
+
+## Concepts Practiced
+
+This project reinforces:
+
+- `useState` hook
+- Controlled components
+- Synthetic events in React
+- Conditional rendering
+- Handling numeric edge cases
+- Functional updates in state
+- Clean component logic separation
+
+---
+
+## Installation & Setup
+
+To run locally:
+
+```bash
+# Clone the repository
+git clone <your-repository-url>
+
+# Navigate into the folder
+cd smart-counter
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+Then open:
+
+http://localhost:5173
+Deployment
+
+The project is deployed using Vercel.
+
+## To deploy your own version:
+npm run build
+
+Then deploy the dist folder to your preferred hosting provider.
+
+```
+## Future Improvements
+
+- Add step size selector
+
+- Add history of operations
+
+- Add dark/light theme toggle
+
+- Convert to TypeScript
+
+- Add unit testing (Vitest / Jest)
+
+## Learning Purpose
+
+This project was built as part of a structured React learning journey, focusing on mastering:
+
+- State-driven UI
+
+- Component thinking
+
+- Precision handling in JavaScript
+
+- Clean UI logic
+
+## Author
+
+Built by Sagar Pani<br>
+LinkedIn: https://www.linkedin.com/in/sagarpani
