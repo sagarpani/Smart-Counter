@@ -33,7 +33,10 @@
     transform: scale(0.95);
 }
 
-@media(max-width: 950px){
+@media(max-width: 400px){
+    .input-container{
+        top: 155px;
+    }
     .input-add-btn:hover{
         box-shadow: none;
     }

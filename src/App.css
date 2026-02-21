@@ -43,14 +43,20 @@
     top: 11em;
 }
 
-@media (max-width: 950px){
+@media (max-width: 400px){
     .display-value{
-        font-size: 10rem;
+        font-size: 8rem;
+        padding: 25px 20px;
+    }
+    .display{
+        top: 18rem;
     }
     .gothrough{
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         word-spacing: 1px;
-        font-size: 16px;
-    }
+        font-size: 17px;
+        padding: 4px 85px;
+        top: 20px;
+    }    
 }
 

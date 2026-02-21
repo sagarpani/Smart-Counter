@@ -34,7 +34,10 @@
 
 }
 
-@media(max-width: 950px) {
+@media(max-width: 400px) {
+    .btn-container{
+        top: 120px;
+    }
     .btn:hover {
         box-shadow: none;
     }
