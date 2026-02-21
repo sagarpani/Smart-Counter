@@ -55,7 +55,7 @@ function App() {
             className="container"
 
         >
-            {showNotification && <p className="Notification">You've reached the limit...</p>}
+            {showNotification && <p className="Notification">You're exceeding the limit...</p>}
             <div className="display">
                 <p className="display-value">{value.toString().padStart(2, '0')}</p>
             </div>
