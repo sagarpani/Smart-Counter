@@ -31,7 +31,7 @@ function App() {
             const num = Number(inputValue);
             if (isNaN(num)) return prev;
             let tempChecker = (prev + num);
-            if(tempChecker === 100){
+            if(tempChecker >= 100){
                 setShowNotification(true);
             }
             if (tempChecker < 0 || tempChecker > 100) return prev;
