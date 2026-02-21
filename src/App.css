@@ -10,7 +10,17 @@
     border-radius: 12px;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 400px;
+    margin: 10px;
+}
 .display{
+    max-width: 400px;
     background: linear-gradient(90deg ,rgb(87, 94, 200), rgba(128, 140, 189, 0.808));
     border-radius: 20px;
     display: flex;
@@ -18,7 +28,7 @@
     align-items: center;
     backdrop-filter: blur(15px);
     box-shadow: 0px 2px 5px rgba(87, 94, 200, 0.729), inset 0px -1px 5px rgb(87, 94, 200, 0.7);
-    position: absolute;
+    position: relative;
 }
 .display-value{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -27,36 +37,35 @@
     
 }
 .gothrough{
-    position: relative;
-    top: 60px;
     padding: 4px 100px;
     background:linear-gradient(90deg,rgb(2, 2, 39), rgba(255, 255, 255, 0.849), rgb(2, 2, 39));
     color: black;
     font-size: 13px;
     letter-spacing:7px;
     word-spacing: 4px;
+    position: absolute;
+    z-index: 1;
 }
 
 .Notification{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 11em;
+   
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
+    .wrapper{
+        min-width: 300px;
+    }
     .display-value{
         font-size: 8rem;
         padding: 25px 20px;
-    }
-    .display{
-        top: 18rem;
+        font-size: 8rem;
     }
     .gothrough{
         letter-spacing: 1px;
         word-spacing: 1px;
         font-size: 17px;
-        padding: 4px 85px;
-        top: 20px;
+        padding: 4px 82px;
     }    
 }
 

@@ -12,11 +12,11 @@ function App() {
 
 
     function increment() {
-        setValue(prev =>{
-            if(prev >= 99){
+        setValue(prev => {
+            if (prev >= 99) {
                 setShowNotification(true);
             }
-            return  (prev < 100 ? prev + 1 : prev);
+            return (prev < 100 ? prev + 1 : prev);
         })
     }
     function decrement() {
@@ -31,7 +31,7 @@ function App() {
             const num = Number(inputValue);
             if (isNaN(num)) return prev;
             let tempChecker = (prev + num);
-            if(tempChecker >= 100){
+            if (tempChecker >= 100) {
                 setShowNotification(true);
             }
             if (tempChecker < 0 || tempChecker > 100) return prev;
@@ -41,7 +41,7 @@ function App() {
     }
 
     useEffect(() => {
-        if(!showNotification) return;
+        if (!showNotification) return;
 
         const timer = setTimeout(() => {
             setShowNotification(false);
@@ -56,10 +56,18 @@ function App() {
 
         >
             {showNotification && <p className="Notification">You're exceeding the limit...</p>}
-            <div className="display">
-                <p className="display-value">{value.toString().padStart(2, '0')}</p>
+
+            <div className="wrapper">
+        <div className="display">
+                    <p className="display-value">{value.toString().padStart(2, '0')}</p>
+                    
+                </div>
+                <p className="gothrough">Smart Counter</p>
             </div>
-            <p className="gothrough">Smart Counter</p>
+                
+                
+            
+
             <Buttons
                 increment={increment}
                 decrement={decrement}
